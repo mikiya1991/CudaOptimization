@@ -1,5 +1,5 @@
 #include "hip/hip_runtime.h"
-#define BLOCK_SIZE 32
+#define BLOCK_SIZE 256
 #define DATALEN_PER_BLOCK (BLOCK_SIZE * 2)
 #include <stdio.h>
 

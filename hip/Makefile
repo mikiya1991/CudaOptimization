@@ -4,8 +4,11 @@ TARGETS:=$(patsubst %.cpp, %, $(wildcard *.cpp))
 all: $(TARGETS)
 
 clean:
-	-rm -rf *o 
+	-rm -rf *.o 
 	-rm $(TARGETS) 
+
+clean-all: clean
+	-rm *.csv *.db *.json *.txt
 
 $(TARGETS): % : %.o
 	hipcc $^ -o $@

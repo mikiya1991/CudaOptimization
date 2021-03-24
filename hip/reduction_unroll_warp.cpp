@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
-    this works, because 
+    this works, because
     last warp is like simd ? when is simd or not?
     volatile because each instruct deps on last result, why others not need ?
     **/
